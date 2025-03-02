@@ -15,7 +15,4 @@ tiles does nothing) and tested game-over conditions, so that players could no lo
 after they lost (except reset or pick a different difficulty).
 
 Used recursion in the revealTile method, which triggered whenever the player attempted to left-click on a tile. 
-For example, if the tile was an empty tile with no mines surrounding it, revealTile would recurse over the tiles surrounding 
-it, effectively revealing all tiles that are adjacent to it that are either empty or have a number of mines surrounding it. 
-However, it is limited whenever the tile has a number of mines surrounding it, so it does not reveal too much of the board. 
-Essentially, the function stops recursing when it recognizes that the tile it is on has at least one mine adjacent to it.
+For example, if the tile was an empty tile with no mines surrounding it, revealTile would recurse over the tiles surrounding it, effectively revealing all tiles that are adjacent to it that are either empty or have a number of mines surrounding it. However, it is limited whenever the tile has a number of mines surrounding it, so it does not reveal too much of the board. Essentially, the function stops recursing when it recognizes that the tile it is on has at least one mine adjacent to it.
